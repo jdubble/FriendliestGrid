@@ -15,7 +15,7 @@
 
 .row { 
 	border: solid 2px green;
-	max-width: 100%;
+	width: 100%;
 	clear: both;
 	margin: 1px auto;
  }
