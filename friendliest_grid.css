@@ -1,0 +1,59 @@
+/* The Friendliest Grid System edition 1.0 */
+/* Created by Jeremiah Williams */
+/* http://www.jeremiahwilliams.info */
+/* Last edited Mon, March 31 */
+/* © 2014 All Rights Reserved */
+
+
+ /* Nicolas Gallagher's micro clearfix - Thank you Nick!*/
+    .row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display:table; }
+    .row:after, .clearfix:after { clear: both; }
+    .row, .clearfix { zoom: 1; }
+
+
+/* Row & Column Defaults */
+
+.row { 
+	border: solid 2px green;
+	max-width: 100%;
+	clear: both;
+	margin: 1px auto;
+ }
+
+
+/* Column Selections - one through four columns only */
+/* background-color property should be removed for production or whatever*/
+
+.onecol .col {
+	width: 95.4%;
+	background-color: yellow;
+}
+
+.twocol .col {
+	width: 45.75%;
+	background-color: gold;
+}
+
+.threecol .col {
+	width: 29.2%;
+	background-color: orange;
+}
+
+.fourcol .col {
+	width: 20.9%;
+	background-color: goldenrod;
+
+}
+
+/* For testing purposes only*/
+
+.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+		float: left;
+	border: solid 1px red;
+		padding: 0 1.9%;
+
+}
+
+/*dev notes will be kept secret*/
+
+
