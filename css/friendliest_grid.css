@@ -1,0 +1,632 @@
+/* The Friendliest Grid System edition 1.0 */
+/* Created by Jeremiah Williams */
+/* http://www.jeremiahwilliams.info */
+/* Last edited Mon, March 31 */
+/* © MIT 
+/*  web colors  */
+
+/*   Darkerblue    #00AEEF
+	 Lighter Blue  #00CFFF
+	 orange        #F7931E
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'runda' , sans-serif;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end css reset -------------------------*/
+
+/* jers code arena ------------------------*/
+
+/* Responsive Typography */
+h1 {
+	font-size: 2.2em;
+	line-height: 1.5em;
+	padding-bottom: .7em;
+
+}
+
+h2 {
+	font-size: 1.8em;
+	line-height: 1em;
+	padding-bottom: .8em;
+	border-bottom: solid 1px black;
+	margin-bottom: .5em;
+}
+
+h3 {
+	font-size: 1.3em;
+	padding-bottom: .6em;
+	line-height: 1.1em;
+	margin-bottom: .5em;
+}
+
+h4 {
+	font-size: 1.1em;
+	padding-bottom: .6em;
+	line-height: 1.1em;
+	margin-bottom: .5em;
+}
+
+
+h1, h2, h3, h4{
+	font-family: "p22-underground", serif;
+	font-weight: bold;
+}
+
+.twocol h2, .threecol h2, .fourcol h2 {
+	text-align: center;
+}
+
+
+cite {
+	padding-top: 1em;
+	font-size: .8em;
+	text-align: right;
+	color: gray;
+	font-style: italic;
+	clear: both;
+}
+
+cite .sig {
+	text-align: right;
+	clear: left;
+}
+
+.credits {
+	font-size: :.8em;
+}
+
+
+/*   Styling  For  Main Areas */
+
+header {
+	background-color: #00AEEF;
+}
+
+.inclosing {
+	background-color: #F7931E;
+}
+
+footer {
+	background-color: #00AEEF;
+	color: white;
+	
+}
+
+/*  Lists Styles */
+
+ul.iconfont {
+	color: #F26522;
+	display: block;
+	text-align: center;
+}
+
+ul.iconfont li {
+	display: inline-block;
+	margin-left: .8em;
+	padding-bottom: .8em;
+}
+
+span.label {
+	display: none;
+}
+
+ol.list {
+padding: 0;
+margin: 0;
+}
+
+ol.list span {
+	display: block;
+	font-size: 3em;
+	color: lightgray;
+	position: relative;
+	top: .6em;
+	right: .7em;
+	}
+
+ol.list p {
+	padding-left: 2.2em;
+}	
+
+ol.list li  {
+/* background-image: url(../img/bullet.gif); */
+background-repeat: no-repeat;
+font-weight: bold;
+padding-left: 2.2em;
+padding-bottom: .8em;
+}
+
+/* Search Bar Styling */
+
+.searchbar {
+	padding : .5em;
+	font-size: 1em;
+	float: right;
+	}
+
+/*  Link Styles */
+
+
+
+a:link {color:white; text-decoration: none;}      /* unvisited link */
+a:visited {color:white;}   /* visited link */
+a:hover {color:black;}     /* mouse over link */
+a:active {color:white;}    /* selected link */
+
+
+
+
+/* Responzive Menu Displays In Top over 48 ems and in footer under 48 ems */
+
+header nav ul { display: none; list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; background-color: #F7931E;}
+header nav ul li { display: inline-block; text-align: left; }
+header nav ul li a  { display: block; padding: .938em .625em; text-decoration: none; color: black; }
+header nav ul li a:hover,  { background-color: #000; color: white; }
+
+.anchor-link { display: inline-block; text-align: center; padding: .625em .938em; color: #fff; background-color: #0084B4; text-decoration: none; margin: 3px; float: right; }
+
+footer nav { display: block; font-size: 2em; }
+footer nav ul { list-style: none; margin: 0px; padding: 0px; text-align: center; }
+footer nav ul li { display: block; list-style: none; text-align: center;  }
+footer nav ul li a { display: block; text-decoration: none; padding: 0 1em 2em .5em;color: white; }
+footer nav ul li a:hover { color: #000; }
+
+@media all and (min-width:39.4em){
+	
+	header nav ul { display: block; }
+	footer nav { font-size: 1em;  }
+	footer nav ul li { display: inline-block;}
+	.anchor-link { display: none; }
+	
+	
+}
+
+/* End Responsive Menu*/
+
+
+/* Styling for layout WARNING: Adjust with caution as these measurements are tested. */
+
+body {
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+p { padding-bottom: 1em;
+	
+}
+
+img {
+	width: 100%;
+}
+ /* Nicolas Gallagher's micro clearfix - Thank you Nick!*/
+    .row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display:table; }
+    .row:after, .clearfix:after { clear: both; }
+    .row, .clearfix { zoom: 1; }
+
+
+/* Row & Column Defaults */
+
+.row { 
+	/*border: solid 2px green;*/
+	max-width: 79em; /* normal width of 1264 px*/
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0;
+ }
+
+
+/* Column Selections - one through four columns only */
+/* background-color property should be removed for production or whatever*/
+
+.onecol .col {
+	width: 90%; /* Set single column to be fluid in % no need for fixed width calcs*/
+	/*background-color: yellow;*/
+}
+
+.twocol .col {
+	width: 90%; /* 688 px */
+	/*background-color: gold;*/
+}
+
+.threecol .col {
+	width: 90%; /* 448 px */
+/*	background-color: orange; */
+
+}
+
+.fourcol .col {
+	width: 90%; /* 280 px*/
+/* 	background-color: goldenrod; */
+
+}
+
+/* For testing purposes only*/
+
+.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+	float: left;
+	margin: 1em;
+
+} 
+
+
+
+/* Media Query for  ------------------------------ Landscape Phone*/
+
+@media all and (min-width: 630px)  {
+
+	body {
+		font-size: 1em;
+		line-height: 1.2em;
+		/*background-color: goldenrod;  */
+	}
+
+
+
+
+	/* Row & Column Defaults */
+
+	.row { 
+		max-width: 38em; /* normal width of 1264 px*/
+		clear: both;
+		margin: 0 auto;
+	 }
+
+
+	/* Column Selections - one through four columns only */
+	/* background-color property should be removed for production or whatever*/
+
+	.onecol .col {
+		width:37.7em;
+		/* Set single column to be fluid in % no need for fixed width calcs*/
+		/*background-color: yellow;*/
+	}
+
+	.twocol .col , .fourcol .col{
+		width: 18.2em; /* 688 px */
+		/*background-color: gold;*/
+	}
+
+	.threecol .col {
+		width: 37.7em; /* 448 px */
+		display: block;
+		text-align: left;
+
+	/*	background-color: orange; */
+	}
+
+	.threecol .spantwo {
+		display: block;
+		text-align: center;
+	}
+
+
+
+	/* For testing purposes only*/
+
+	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+		float: left;
+		margin: .7em .3em;
+
+	} 
+
+}/*End Media Query landscape Phone */
+
+
+/* Media Query for Portrait Tablets ------------------------------ Portrait Tablets  works*/
+
+@media all and (min-width: 48em)  {
+
+	body {
+		font-size: 1em;
+		line-height: 1.2em;
+		background-color: white;
+		border:5px solid purple;
+	}
+
+	/* Row & Column Defaults */
+
+	.row { 
+		max-width: 46em; /* normal width of 1264 px*/
+		clear: both;
+		margin: 0 auto;
+	 }
+
+	 .col {
+	 	padding: .8em;
+	 }
+
+
+	/* Column Selections - one through four columns only */
+	/* background-color property should be removed for production or whatever*/
+
+	.onecol .col {
+		width: 44em;
+		/* Set single column to be fluid in % no need for fixed width calcs*/
+		/*background-color: yellow;*/
+	}
+
+	.twocol .col, .fourcol .col {
+		width: 20.25em; /* 688 px */
+		/*background-color: gold;*/
+	}
+
+	.threecol .col {
+		width: 13.225em; /* 448 px */
+	/*	background-color: orange; */
+
+	}
+
+	.threecol .spantwo {
+		width: 28.5em;
+	}	
+
+	/* For testing purposes only*/
+
+	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+		float: left;
+	}
+
+}/*End Media Query Portrait Tablet */
+
+/* Media Query for Tablets ------------------------------ Landscape -wide- Tablets*/
+
+@media all and (min-width: 1100px)  {
+
+	body {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		background-color: white;
+		border:5px solid yellow;
+	}
+
+	
+	/* Row & Column Defaults */
+
+	.row { 
+		
+		max-width: 57.4em; /* normal width of 1264 px*/
+		clear: both;
+		margin: 0 auto;
+	 }
+
+	 .col {
+	 	padding:1em;
+	 }
+
+
+	/* Column Selections - one through four columns only */
+	/* background-color property should be removed for production or whatever*/
+
+	.onecol .col {
+		max-width: 57.455em;
+		width:54.6em;
+		/* Set single column to be fluid in % no need for fixed width calcs*/
+		/*background-color: yellow;*/
+	}
+
+	.twocol .col {
+		width: 26.9em; /* 688 px */
+		/*background-color: gold;*/
+	}
+
+	.threecol .col {
+		width: 16.125em; /* 448 px */
+	/*	background-color: orange; */
+
+	}
+
+	.threecol .spantwo {
+		width: 35.3em;
+	}
+
+	.fourcol .col {
+		width: 11.3em; /* 280 px*/
+	/* 	background-color: goldenrod; */
+
+	}
+
+	/* For testing purposes only*/
+
+	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+		float: left;
+
+} 
+
+}/*End Media Query Landscape Tablet Screen */
+
+
+/* Media Query for Computer Screen--------------------------------%$%$*/
+
+@media all and (min-width: 1280px){
+
+	body {
+		font-size: 22px;
+		line-height: 1.3em;
+		background-color: white;
+		border:5px solid green;
+	}
+
+	
+
+	/* Row & Column Defaults */
+
+	.row { 
+		/*border: solid 2px green; */
+		max-width: 55.4em; /* normal width of 1264 px*/
+		clear: both;
+	 }
+	
+	.col {
+		padding: 1em;
+	}
+
+	/* Column Selections - one through four columns only */
+	/* background-color property should be removed for production or whatever*/
+
+	.onecol .col {
+		width:53em;
+		/* Set single column to be fluid in % no need for fixed width calcs*/
+		/*background-color: yellow;*/
+	}
+
+	.twocol .col {
+		width: 26.635em; /* 688 px */
+		/*background-color: gold;*/
+	}
+
+	.threecol .col {
+		width: 16.3em; /* 448 px */
+	/*	background-color: orange; */
+
+	}
+
+	/* For one column equal to two column width*/
+	.threecol .spantwo{
+		width: 34.5em;
+	}
+
+	.fourcol .col {
+		width: 11.5em; /* 280 px*/
+	/* 	background-color: goldenrod; */
+
+	}
+
+	/* For testing purposes only*/
+
+	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+		float: left;
+		margin: 0;
+
+
+
+	} 
+
+}/*End Media Query computer Screen */
+
+/* Media Query for TV   1920/1080--------------------------------%$%$*/
+
+@media only screen and (min-width: 1800px) {   /* 1439px*/
+
+	body {
+		font-size: 2em; /* 23 px */ 
+		line-height: 1.2em;
+		background-color: white;
+		border:5px solid pink;
+	}
+
+	
+
+	/* Row & Column Defaults */
+
+	.row { 
+		max-width: 56.4em; /* normal width of 1264 px */
+		clear: both;	 }
+
+
+	/* Column Selections - one through four columns only */
+	/* background-color property should be removed for production or whatever*/
+
+	.onecol .col {
+		width:53.3em;
+		/* Set single column to be fluid in % no need for fixed width calcs*/
+		/*background-color: yellow;*/
+	}
+
+	.twocol .col {
+		width: 26.8em; /* 688 px */
+		/*background-color: gold;*/
+	}
+
+	.threecol .col {
+		width: 16em; /* 448 px */
+	/*	background-color: orange; */
+
+	}
+
+	/* For one column equal to two column width*/
+	.threecol .spantwo{
+		width: 34.6em;
+	}
+
+
+	.fourcol .col {
+		width: 11.225em; /* 280 px*/
+	/* 	background-color: goldenrod; */
+
+	}
+
+	/* For testing purposes only*/
+
+	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
+		float: left;
+
+	} 
+
+}/*End Media Query 1920/1080 Screen */
+
+
+
+

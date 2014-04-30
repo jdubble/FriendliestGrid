@@ -1,73 +1,194 @@
 <html>
 <head>
+
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>The Friendliest Grid System</title>
-	<link rel="stylesheet" type="text/css" href="friendliest_grid.css">
+	<link rel="stylesheet" type="text/css" href="css/friendliest_grid.css">
+	
+		<!-- jQuery library (served from Google) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+	<!-- Webfont Icon stuff -->
+	<link rel="stylesheet" href="css/ifonts.css" />
+
+	<!--[if lt IE 8]><!-->
+	<link rel="stylesheet" href="css/ie7/ie7.css" />
+	<!--<![endif]-->
+	
+	<script type="text/javascript" src="//use.typekit.net/uee8nht.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
 </head>
 <body>
-<h1>Here is the documentation that I have supplied for anyone with any level of HTML experience</h1>
-<h2>About the Friendliest Grid</h2>
-<p>The Friendliest Grid is built on two values simplicity and compatibilty. The grid's options are limited and easy to use for that reason. Whether you are a graphic designer or not, you can see grids used everywhere. On the web, an exremely large portion of responsive websites have a maximum of four columns in each row. This Grid will give you the option to use one, two, three, or four columns for each row. If you like, you may also set a maximum width so the row doesn't fill outwards to the edges of the screen or monitor the user has.</p>
-<p>The borders and the background colors are just there for demonstration purposes and can easily be removed in the css file. Simply locate the lines with the word border 'border: solid 1px red;' and delete the whole line including the semicolon ;</p>
-<p>To remove the background colors locate the four background color properties in each column. They look like this with a different color for each. 'background-color: orange;'. Simply delete these four lines and you are ready to begin.</p>
-<h2>How to use the Friendliest Grid</h2>
-<h3>How to set up a four column grid</h3>
-<p>To create a four column grid use one row with the class 'row fourcol'. Then nest four divs with the class 'col'. Easy Peasy eh? Even if you decide to not put any content in the first, second or third column, it will still keep it's alignment. For example, some headers just have a logo on the far left and a search box on the far right. This would work perfect in the Friendliest Grid because, although you would still have to create the divs for each column you could easily leave them empty and just fill the first and fourth column with content. </p>
-<!-- To create a four column grid use the class 'row fourcol'. Then nest four divs inside the row with the class 'col'. Easy Peasy eh? -->
+<header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="https://github.com/jdubble/FriendliestGrid">Git Repo</a></li>
+		<li><a href="#">Download</a></li>
+
+	</ul>
+
+</nav>
+
 <div class="row fourcol">
 	<div class="col">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem, quod, architecto tempore eos laudantium tempora odio rem quidem quam odit totam autem doloribus libero illo. At, soluta fuga inventore?</p>
+		<p><img src="img/tfglogo.svg" alt="The Friendliest Grid Logo"></p>
 	</div>
 	<div class="col">
-		<p>Distinctio, aliquam, inventore, magni possimus illum ea maxime repudiandae recusandae incidunt ut doloribus nulla a itaque voluptates eum aspernatur odio placeat assumenda vel tempora. Tempore, facere et dicta laboriosam totam.</p>
+		<p></p>
 	</div>
 	<div class="col">
-		<p>Optio, nulla delectus voluptatibus officia dolorum maxime voluptatem qui officiis velit adipisci quam expedita! Repellat, dolorem, consequuntur explicabo expedita optio itaque eveniet quibusdam eaque atque aliquam autem unde ab cupiditate.</p>
+		<p></p>
 	</div>
 	<div class="col">
-		<p>Deleniti, vero, quod, atque facere inventore nisi omnis nostrum repudiandae quisquam cumque harum totam dolore odio maiores saepe! Quaerat tempore excepturi hic voluptas facilis dolores obcaecati accusantium aliquid adipisci saepe.</p>
-		</div>
+		<p><input class="searchbar" type="text" name="id_number" value="Search" id="id_number" maxlength="16" /></p>
+	</div>
 </div>
-<h3>How to set up a three column grid</h3>
-<p>To create a three column grid use one row with the class 'row threecol'. Then nest three divs with the class 'col'. Yes that's all you have to do!</p>
-<!-- To create a three column grid use the class 'row threecol'. Then nest three divs inside the row with the class 'col'. So easy a caveman could do it! -->
-<div class="row threecol">
-	<div class="col">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem, quod, architecto tempore eos laudantium tempora odio rem quidem quam odit totam autem doloribus libero illo. At, soluta fuga inventore?</p>
-	</div>
-	<div class="col">
-		<p>Distinctio, aliquam, inventore, magni possimus illum ea maxime repudiandae recusandae incidunt ut doloribus nulla a itaque voluptates eum aspernatur odio placeat assumenda vel tempora. Tempore, facere et dicta laboriosam totam.</p>
-	</div>
-	<div class="col">
-		<p>Optio, nulla delectus voluptatibus officia dolorum maxime voluptatem qui officiis velit adipisci quam expedita! Repellat, dolorem, consequuntur explicabo expedita optio itaque eveniet quibusdam eaque atque aliquam autem unde ab cupiditate.</p>
-	</div>
-
-</div>
-<h3>How to set up a two column grid</h3>
-<p>To create a two column grid use one row with the class 'row twocol'. Then nest two divs with the class 'col'. Now your gettin it!!</p>
-<!-- To create a two column grid use the class 'row threecol'. Then nest two divs inside the row with the class 'col'. So easy a caveman could do it! -->
-<div class="row twocol">
-	<div class="col">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem, quod, architecto tempore eos laudantium tempora odio rem quidem quam odit totam autem doloribus libero illo. At, soluta fuga inventore?</p>
-	</div>
-	<div class="col">
-		<p>Distinctio, aliquam, inventore, magni possimus illum ea maxime repudiandae recusandae incidunt ut doloribus nulla a itaque voluptates eum aspernatur odio placeat assumenda vel tempora. Tempore, facere et dicta laboriosam totam.</p>
-	</div>
-
-</div>
-<h3>How to set up a one column grid</h3>
-<p>To create a one column grid use one row with the class 'row onecol'. Then nest one div with the class 'col'. So easy and time saving too, just for you!</p>
-<!-- To create a two column grid, yes you guessed it!!! use the class 'row onecol'. Then nest one divs inside the row with the class 'col'. I wish my keys were this easy to remember! -->
 <div class="row onecol">
 	<div class="col">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatem, quod, architecto tempore eos laudantium tempora odio rem quidem quam odit totam autem doloribus libero illo. At, soluta fuga inventore?</p>
+		<ul class="bxslider">
+			<li><img src="img/pic1.gif" alt="pic1" /></li>
+			<li><img src="img/pic2.gif" alt="pic1" /></li>
+			<li><img src="img/pic3.gif" alt="pic1" /></li>
+		</ul>
 	</div>
+</div>
+
 	
+</div>
+
+</header>
+<!-- To create a three column grid use the class 'row threecol'. Then nest three divs inside the row with the class 'col'. So easy a caveman could do it! -->
+<section>
+<article>
+<div class="row threecol">
+	<div class="col">
+		<img src="img/target.svg" alt="targeted content">
+		<h2>Targeted Content 1st Delivery</h2>
+		<p>This clever grid system will reflow all your content beautifully regardless of the device width, pixel density, or resolution. After all, if content is "King", then why should content be held back from mobile or tablet users. The freindliest grid system makes no enemies. We don't fool users into thinking they are being delivered all the content.</p>
+	</div>
+	<div class="col">
+		<img src="img/wrench.svg" alt="wrench">
+		<h2>A True One Size Fits All Approach</h2>
+		<p>Our "no worries" frees you, the designer, to spend more time designing and less time worrying about how you website will look on other screens. This grid system is so friendly that it will even work on older phones.  You can be sure, that at the very least, every user on every device is able to read your content.</p>
+	</div>
+	<div class="col">
+		<img src="img/triangle.svg" alt="triangle">
+		<h2>Triple-Level Pro Enhancement</h2>
+		<p>"Enhancement" is the latest and greatest buzzword as of 2014. Simply put, its an approach to design in which the website is tested on the device with the least capabalities, then enhancements for newer faster, more capabale machines and browsers. Progressive enhancement ensures that all content will be readable and be seen by all browsers and every devices.</p>
+	</div>
 
 </div>
-<h4>Future Improvements</h4>
 
-<p>Future improvements will include the simplest way to add responsive images to the Friendliest Grid System on earth.</p>
+</article>
 
+<article>
+	
+<div class="row onecol">
+	
+<div class="col">
+	<h2>What's In The Box?</h2>
+
+	<h3>Here is a list of the features of the friendliest grid on earth.</h3>
+	<ol class="list">
+		<li><span>1</span>Responsive </li><p>The CSS is responsive and all layout, typography, and images will scale appropiately. All the elements are styled in ems to keep all the padding, borders, margins, typography, and images consistent. This grid system is not dependent on a particular device or the zoom level. The friendliest grid system wishes to be friends with every device or screen resolution. No matter whether your user is viewing your website with a phone, tablet, pc, or HDTV, you can rest easy knowing that your content will be displayed accurately and still retain your design elements.</p>
+		<li><span>2</span>Backwards Compatibility</li><p>Many people are not obsessed with owning the newset iPhone or Android phones and still use their older device with an older operating system. Some older phones even lack proper ram and lack the ability to process javascript. If you using The Friendliest Grid, you need not fret. It is lightweight and will display your content with even the most limited of resources.</p> 
+		<li><span>3</span>A Responsive, Touch-Capable Image Slider</li><p>Bxslider is an excellent asset to the friendliest grid on earth. It's ability to operate on any touch capable device is unrivaled in other in its class. More information about how to configure bxslider can be found at the <a href="http://www.bxslider.com">bx slider homepage.</a> </p>
+		<li><span>4</span>Retina &amp Non-retina Display Support </li><p>Ever since the first retina capable iPod, iPad, iPhone, and Apple's retina display on their MacBook Pros, coders and web designers have been searching for a way to serve up images and icons that look crisp and clear. Unfortunately, the only way to do this was to serve up many copies of the same image, which puts a huge overhead on the total weight of the site and slows the load time. Now, through the use of SVG images it is now possible to view the same image at the different resolutions, while maintaining clean, sharp edges consisitently.</p>
+		<li><span>5</span>Works on any HD TV</li><p>Yep, that's right it will grow to fill even an HDTV set. With some well planned custom media queries any website designed with the friedliest grid system will be easy to read even on an HDTV from your living room couch.</p>
+		<li><span>6</span>Easy to remember class names.</li><p>For coders who are planning to implement their site, this is the best news of all. The decision to make this the friendliest grid was also a decision to make it the easiest grid system to use and make your own. For example, one single column row, has been given the class "row", then nested inside the "row"" is "col." Two columns is "two col", then "three col", and "four col". It's that easy.</p>
+	</ol>
+	
+	<p></p>
+
+</div>
+
+</div>
+
+
+
+
+</article>
+
+
+</section>
+
+<section class="inclosing">
+
+<div class="row threecol">
+		<div class="col">
+			<img src="img/dload.svg" alt="download grid system here">
+
+		</div>
+		<div class="col">
+			<h3>Our Promise to You</h3>
+			<p>We promise that you'll love this grid system. If for any reason you find that it is lacking in any way please e-mail me and I will send you whatever money you have paid in hopes that we can at least be friends. We want to be your friends. Please shoot me an eMail and let me know how I can improve the grid. Or, if you would like to help, you could always fork and fix or create a pull request on the Git Hub page.</p>
+
+		</div>
+		<div class="col">
+			<h3>What Users Say</h3>
+			<p>People of all levels are raving about this grid system. They mostly love the fact that they don't have to worry if it will work on older browsers or older mobile phones. Some have even said that it the best grid system out there. Personally I don't believe any hype, so go ahead try it out for yourself.</p> <cite>"Noone can tell you what The Friendliest Grid System is, you have to experience it for yourself." <span class="sig"> - Morpheus</span></cite>
+
+		</div>
+	</div>
+</section>
+
+	<footer>
+<!-- To create a two column grid, yes you guessed it!!! use the class 'row onecol'. Then nest one divs inside the row with the class 'col'. I wish my keys were this easy to remember! If you need a grid to span two columns add the class to one column twocol-->
+<div class="row threecol">
+	<div class="spantwo col">
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="https://github.com/jdubble/FriendliestGrid">Git Repo</a></li>
+		<li><a href="#">Download</a></li>
+
+	</ul>
+
+	</nav>
+	</div>
+	<div class="col">
+				<ul class="iconfont">
+					<li><a href="https://www.facebook.com/jeremiahwilliams4u"><span class="icon icon-facebook"></span><span class="label"> facebook</span></a></li>
+					<li><a href="https://twitter.com/jeremiahwiliams"><span class="icon icon-twitter"></span><span class="label"> twitter</span></a></li>
+					<li><a href="http://www.linkedin.com/in/jeremiahhwilliams"><span class="icon icon-linkedin"></span><span class="label"> linkedin</span></a></li>
+					<li><a href="https://plus.google.com/+JeremiahWilliams1/"><span class="icon icon-googleplus"></span><span class="label"> googleplus</span></a></li>
+					<li><a href="https://github.com/jdubble"><span class="icon icon-github"></span><span class="label"> github</span></a></li>
+				</ul>		
+			
+	</div>
+
+</div>
+
+
+	<div class="row onecol">
+		<div class="col">
+			<h4>Credits</h4>
+
+			<p>Constructed with love for technology and respect for all life. Please use, abuse, or destroy it, it is a gift with no strings attached for now.</p>
+			<p>Made possible by <a href="http://www.jeremiahwilliams.info">Jeremiah Williams</a></p>
+
+		</div>
+	</div>
+
+
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  	auto:true
+  });
+
+});
+</script>
 </body>
 </html>
