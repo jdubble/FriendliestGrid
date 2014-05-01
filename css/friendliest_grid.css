@@ -151,6 +151,7 @@ header {
 footer {
 	background-color: #00AEEF;
 	color: white;
+	padding-top: 1em;
 	
 }
 
@@ -349,7 +350,8 @@ img {
 	}
 
 	.twocol .col , .fourcol .col{
-		width: 18.2em; /* 688 px */
+		width: 18.4em;
+		padding: 0; /* 688 px */
 		/*background-color: gold;*/
 	}
 
@@ -413,7 +415,8 @@ img {
 	}
 
 	.twocol .col, .fourcol .col {
-		width: 20.25em; /* 688 px */
+		width: 22em;
+		padding:0; /* 688 px */
 		/*background-color: gold;*/
 	}
 
@@ -487,8 +490,8 @@ img {
 	}
 
 	.fourcol .col {
-		width: 11.3em; /* 280 px*/
-	/* 	background-color: goldenrod; */
+		width: 13.5em;
+		padding:0; 
 
 	}
 
@@ -532,7 +535,6 @@ img {
 
 	.onecol .col {
 		width:53em;
-		/* Set single column to be fluid in % no need for fixed width calcs*/
 		/*background-color: yellow;*/
 	}
 
@@ -553,7 +555,9 @@ img {
 	}
 
 	.fourcol .col {
-		width: 11.5em; /* 280 px*/
+		width: 13.5em;
+		
+		 /* 280 px*/
 	/* 	background-color: goldenrod; */
 
 	}
@@ -617,7 +621,7 @@ img {
 
 
 	.fourcol .col {
-		width: 11.225em; /* 280 px*/
+		width: 13.5em; /* 280 px*/
 	/* 	background-color: goldenrod; */
 
 	}
