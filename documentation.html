@@ -2,24 +2,53 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Documentation For The Friendliest Grid</title>
+	<link rel="stylesheet" href="css/friendliest_grid.css">
 </head>
 <body>
 <h1>Here is the documentation that I have supplied for anyone with any level of HTML experience</h1>
 <h2>About the Friendliest Grid</h2>
-<p>The Friedliest Grid is built on two values simplicity and compatibilty. The grid's options are limited and easy to use for that reason. Whether you are a graphic designer or not, you can see grids used everywhere. On the web, an exremely large portion of responsive websites have a maximum of four columns in each row. This Grid will give you the option to use one, two, three, or four columns for each row. If you like, you may also set a maximum width so the row doesn't fill outwards to the edges of the screen or monitor the user has.</p>
+<p>The Friedliest Grid is built on two values simplicity and compatibilty. The grid's options are limited and easy to use for that reason. Whether you are a graphic designer or not, you can see grids used everywhere. On the web, an exremely large portion of responsive websites have a maximum of four columns in each row. This Grid will give you the option to use one, two, three, or four columns for each row. You can also use a special case and span 2 rows in a three column row. This enables another level of control. To begin all columns are nested within a row.</p>
 <p>The borders are just there for demonstration purposes.</p>
 <h2>How to use the Friendliest Grid</h2>
+<p>Its simple, just begin with a row. Then choose how many columns you desire within the row. You can choose from one to four columns. Also, within a three column row, you can make one column double wide and just add one more column. This is great for menus or any other element you need to span two columns.</p>
 <h3>How to set up a four column grid</h3>
 <p>To create a four column grid use one row with the class 'row fourcol'. Then nest four divs with the class 'col'. Easy Peasy eh? Even if you decide to not put any content in the first, second or third column, it will still keep it's alignment. For example, some headers just have a logo on the far left and a search box on the far right. This would work perfect in the Friendliest Grid because, although you would still have to create the divs for each column you could easily leave them empty and just fill the first and fourth column with content. </p>
 <h3>How to set up a three column grid</h3>
 <p>To create a three column grid use one row with the class 'row threecol'. Then nest three divs with the class 'col'. Yes that's all you have to do!</p>
+<p>Here is a working example. This div has the classes of "row threecol". Ex. div class="row threecol"</p>
+<div class="row threecol"> 
+	<div class="col">
+		Here is the first column. This div is nested inside a row with the class of "col". Be sure to put the correct number of columns nested inside the right classes. If your class is "row threecol" make sure you have 3 nested columns.
+	</div>
+	<div class="col">
+		Here is the second column. This div is nested inside a row with the class of "col".
+	</div>
+	<div class="col">
+		Here is the third and last column. This div is nested inside a row with the class of "col".
+	</div>
+</div>
 <h3>How to set up a three column grid where one column spans the length of two columns.</h3>
-<p>Use the same strategy as creating a three column grid except add the class 'spantwo' to either of the columns. Because you're only using two colums you only need to write two cols, one should be just 'col' and the other should be 'spantwo'</p>
-<h3>How to set up a two column grid</h3>
+<p>Use the same strategy as creating a three column grid except add the class 'spantwo' to either of the columns. Because you're only using two colums you only need to write two cols, one should be just 'col' and the other should be 'spantwo'. EX. div class="row threecol"</p>
+<div class="row threecol"> 
+	<div class="spantwo col">
+		<p>This column spans two columns width to give you more control. Also the text aligning is centered for ease of design and for responsiveness. You may change anything to your specifications. The class for this nested div is still col but we added spantwo as well. </br>EX. div class="spantwo col"</p>
+	</div>
+	<div class="col">
+		Here is the third and final column. This div is nested inside a row with the class of "col". Make sure to only add two nested divs altogether because we are spanning two cols with one col so it still counts as two columns.
+	</div>
+</div>
+<h3>How to set up a two column row</h3>
 <p>To create a two column grid use one row with the class 'row twocol'. Then nest two divs with the class 'col'. Now your gettin it!!</p>
+<div class="row twocol">
+	<div class="col">Here is an example of a two column row. Remember it's always just a class of "col" for any column. If you're planning to span a col then just add the "spantwo" class. </br>EX. div="col"</div>
+	<div class="col">Here is an example of a two column row. Remember it's always just a class of "col" for any column. If you're planning to span a col then just add the "spantwo" class. </br>EX. div="col"</div>
+</div>
 <h3>How to set up a one column grid</h3>
 <p>To create a one column grid use one row with the class 'row onecol'. Then nest two divs with the class 'col'. So easy and time saving too, just for you!</p>
+<div class="row onecol">
+	<div class="col">Here is a single row with a single column. This is only needed when you need all the screen real estate you can get. I recommend using this for content. Ex. div class="row onecol"</div>
+</div>
 <h4>Future Improvements</h4>
-<p>Future improvements will include the simplest way to add responsive images to the Friendliest Grid System on earth.</p>
+<p>Future improvements will include improvements from you. Please hit me up on twitter if you would like to see anything improved or changed. I will do my best to implement your ideas if it is helpful to everyone.</p>
 </body>
 </html>
