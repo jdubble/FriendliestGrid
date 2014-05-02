@@ -321,9 +321,9 @@ img {
 
 
 
-/* Media Query for  ------------------------------ Landscape Phone*/
+/* Media Query for  ------------------------------ Landscape Phone  630px*/
 
-@media all and (min-width: 630px)  {
+@media all and (min-width: 39.375em)  {
 
 	body {
 		font-size: 1em;
@@ -438,9 +438,9 @@ img {
 
 }/*End Media Query Portrait Tablet */
 
-/* Media Query for Tablets ------------------------------ Landscape -wide- Tablets*/
+/* Media Query for Tablets ------------------------------ Landscape -wide- 1100px Tablets*/
 
-@media all and (min-width: 1100px)  {
+@media all and (min-width: 68.750em)  {
 
 	body {
 		font-size: 1.2em;
@@ -505,9 +505,9 @@ img {
 }/*End Media Query Landscape Tablet Screen */
 
 
-/* Media Query for Computer Screen--------------------------------%$%$*/
+/* Media Query for Computer Screen--------------------------------%$%$*  1280px*/
 
-@media all and (min-width: 1280px){
+@media all and (min-width: 80em){
 
 	body {
 		font-size: 22px;
@@ -576,7 +576,7 @@ img {
 
 /* Media Query for TV   1920/1080--------------------------------%$%$*/
 
-@media only screen and (min-width: 1800px) {   /* 1800px*/
+@media only screen and (min-width: 112.500em) {   /* 1800px*/
 
 	body {
 		font-size: 2em; /* 23 px */ 
