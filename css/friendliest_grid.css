@@ -155,6 +155,11 @@ footer {
 	
 }
 
+.credits {
+	background-color: white;
+	color:black;
+}
+
 
 
 /*  Lists Styles */
@@ -162,12 +167,10 @@ footer {
 ul.iconfont {
 	color: #F26522;
 	display: block;
-	text-align: center;
 }
 
 ul.iconfont li {
 	display: inline-block;
-	margin-left: .8em;
 	padding-bottom: .8em;
 }
 
@@ -208,22 +211,19 @@ padding-bottom: .8em;
 	padding : .5em;
 	font-size: 1em;
 	float: right;
+	margin-right: .6em;
 	}
 
 /*  Link Styles */
 
 
 
-a:link {color:white; text-decoration: none;}      /* unvisited link */
-a:visited {color:white;}   /* visited link */
-a:hover {color:black;}     /* mouse over link */
-a:active {color:white;}    /* selected link */
 
 /* Styles For Linking hypertext on white background*/
-article .list a:link {color:black; text-decoration: none;}      /* unvisited link */
-article .list a:visited {color:black;}   /* visited link */
-article .list a:hover {color:#F7931E;}     /* mouse over link */
-article .list a:active {color:black;}    /* selected link */
+a:link {color:#F7931E; text-decoration: none;}      /* unvisited link */
+a:visited {color:#F7931E;}   /* visited link */
+a:hover {color:black;}     /* mouse over link */
+a:active {color:#F7931E;}    /* selected link */
 
 
 
@@ -231,31 +231,28 @@ article .list a:active {color:black;}    /* selected link */
 
 header nav ul { display: none; list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; background-color: #F7931E;}
 header nav ul li { display: inline-block; text-align: left; }
-header nav ul li a  { display: block; padding: .938em .625em; text-decoration: none; color: black; }
-header nav ul li a:hover,  { background-color: #000; color: white; }
+header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active  { display: block; padding: .938em .625em; text-decoration: none; color: #333; }
+header nav ul li a:hover  { background-color: #FFF; color: #00AEEF; }
 
 .anchor-link { display: inline-block; text-align: center; padding: .625em .938em; color: #fff; background-color: #0084B4; text-decoration: none; margin: 3px; float: right; }
 
-footer nav { display: block; font-size: 2em; }
-footer nav ul { list-style: none; margin: 0px; padding: 0px; text-align: center; }
-footer nav ul li { display: block; list-style: none; text-align: center;  }
-footer nav ul li a { display: block; text-decoration: none; padding: 0 1em 2em .5em;color: white; }
-footer nav ul li a:hover { color: #000; }
+footer ul { list-style: none; margin: 0px; padding: 0px;  }
+footer ul li { display: block; list-style: none;  }
+footer ul li a:link, footer ul li a:visited, footer ul li a:active { display: block; text-decoration: none; margin: 0 1em 2em .5em;color: white; }
+footer ul li a:hover { color: #000; }
 
 @media all and (min-width:39.4em){
 	
 	header nav ul { display: block; }
-	footer nav { font-size: 1em;  }
-	footer nav ul li { display: inline-block;}
+	footer ul li { display: inline-block;}
+	footer ul li a:link { padding-bottom: 0;padding-left: 0;}
+	ul.iconfont li { padding-left: 0;font-size: .74em;float:left;}
 	.anchor-link { display: none; }
 	
 	
 }
 
 /* End Responsive Menu*/
-
-
-/* Styling for layout WARNING: Adjust with caution as these measurements are tested. */
 
 body {
 	font-size: 1em;
@@ -277,8 +274,10 @@ img {
 
 /* Row & Column Defaults */
 
+
+/* WARNING!! WARNING!! DO NOT EDIT BELOW THIS LINE UNLESS YOUR EXPERIENCED! WARNING!*/
+
 .row { 
-	/*border: solid 2px green;*/
 	max-width: 79em; /* normal width of 1264 px*/
 	clear: both;
 	margin: 0 auto;
@@ -287,27 +286,22 @@ img {
 
 
 /* Column Selections - one through four columns only */
-/* background-color property should be removed for production or whatever*/
 
 .onecol .col {
-	width: 90%; /* Set single column to be fluid in % no need for fixed width calcs*/
-	/*background-color: yellow;*/
+	width: 90%; 
 }
 
 .twocol .col {
-	width: 90%; /* 688 px */
-	/*background-color: gold;*/
+	width: 90%; 
 }
 
 .threecol .col {
-	width: 90%; /* 448 px */
-/*	background-color: orange; */
+	width: 90%;
 
 }
 
 .fourcol .col {
-	width: 90%; /* 280 px*/
-/* 	background-color: goldenrod; */
+	width: 90%; 
 
 }
 
@@ -328,7 +322,6 @@ img {
 	body {
 		font-size: 1em;
 		line-height: 1.2em;
-		/*background-color: goldenrod;  */
 	}
 
 	/* Row & Column Defaults */
@@ -341,18 +334,15 @@ img {
 
 
 	/* Column Selections - one through four columns only */
-	/* background-color property should be removed for production or whatever*/
 
 	.onecol .col {
 		width:37.7em;
-		/* Set single column to be fluid in % no need for fixed width calcs*/
-		/*background-color: yellow;*/
+	
 	}
 
 	.twocol .col , .fourcol .col{
 		width: 18.4em;
-		padding: 0; /* 688 px */
-		/*background-color: gold;*/
+		padding: 0; 
 	}
 
 	.threecol .col {
@@ -360,12 +350,10 @@ img {
 		display: block;
 		text-align: left;
 
-	/*	background-color: orange; */
 	}
 
 	.threecol .spantwo {
 		display: block;
-		text-align: center;
 	}
 
 
@@ -406,34 +394,38 @@ img {
 
 
 	/* Column Selections - one through four columns only */
-	/* background-color property should be removed for production or whatever*/
 
 	.onecol .col {
 		width: 44em;
-		/* Set single column to be fluid in % no need for fixed width calcs*/
-		/*background-color: yellow;*/
+		
 	}
 
-	.twocol .col, .fourcol .col {
-		width: 22em;
-		padding:0; /* 688 px */
-		/*background-color: gold;*/
+	.twocol .col {
+		width: 20em;
+		padding: 1em;
+		
 	}
 
 	.threecol .col {
-		width: 13em; /* 448 px */
-	/*	background-color: orange; */
+		width: 13em;
+		
 
 	}
 
 	.threecol .spantwo {
-		width: 28.5em;
+		width: 28.3em;
+		
 	}	
 
+	 .fourcol .col {
+			width: 22.4em;
+			padding:0; 
+		}
 	/* For testing purposes only*/
 
 	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
 		float: left;
+
 	}
 
 }/*End Media Query Portrait Tablet */
@@ -470,32 +462,27 @@ img {
 	.onecol .col {
 		max-width: 57.455em;
 		width:54.6em;
-		/* Set single column to be fluid in % no need for fixed width calcs*/
-		/*background-color: yellow;*/
 	}
 
 	.twocol .col {
-		width: 26.9em; /* 688 px */
-		/*background-color: gold;*/
+		width: 25.750em; 
 	}
 
 	.threecol .col {
-		width: 16.125em; /* 448 px */
-	/*	background-color: orange; */
+		width: 16.4em; 
 
 	}
 
 	.threecol .spantwo {
-		width: 35.3em;
+		width: 35.5em;
+
 	}
 
 	.fourcol .col {
-		width: 13.5em;
+		width: 13.6em;
 		padding:0; 
 
 	}
-
-	/* For testing purposes only*/
 
 	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
 		float: left;
@@ -521,7 +508,6 @@ img {
 	/* Row & Column Defaults */
 
 	.row { 
-		/*border: solid 2px green; */
 		max-width: 55.4em; /* normal width of 1264 px*/
 		clear: both;
 	 }
@@ -531,21 +517,17 @@ img {
 	}
 
 	/* Column Selections - one through four columns only */
-	/* background-color property should be removed for production or whatever*/
 
 	.onecol .col {
 		width:53em;
-		/*background-color: yellow;*/
 	}
 
 	.twocol .col {
-		width: 26.635em; /* 688 px */
-		/*background-color: gold;*/
+		width: 25.5em; 
 	}
 
 	.threecol .col {
-		width: 16.3em; /* 448 px */
-	/*	background-color: orange; */
+		width: 16.3em;
 
 	}
 
@@ -555,11 +537,7 @@ img {
 	}
 
 	.fourcol .col {
-		width: 13.5em;
-		
-		 /* 280 px*/
-	/* 	background-color: goldenrod; */
-
+		width: 13.7em;
 	}
 
 	/* For testing purposes only*/
@@ -595,38 +573,30 @@ img {
 
 
 	/* Column Selections - one through four columns only */
-	/* background-color property should be removed for production or whatever*/
 
 	.onecol .col {
 		width:53.3em;
-		/* Set single column to be fluid in % no need for fixed width calcs*/
-		/*background-color: yellow;*/
 	}
 
 	.twocol .col {
-		width: 26.8em; /* 688 px */
-		/*background-color: gold;*/
+		width: 25.3em;
 	}
 
 	.threecol .col {
-		width: 16em; /* 448 px */
-	/*	background-color: orange; */
+		width: 16.4em;
 
 	}
 
 	/* For one column equal to two column width*/
 	.threecol .spantwo{
-		width: 34.6em;
+		width: 34.85em;
 	}
 
 
 	.fourcol .col {
-		width: 13.5em; /* 280 px*/
-	/* 	background-color: goldenrod; */
+		width: 13.8em;
 
 	}
-
-	/* For testing purposes only*/
 
 	.fourcol .col, .threecol .col, .twocol .col, .onecol .col{
 		float: left;
