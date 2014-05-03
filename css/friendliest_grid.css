@@ -224,7 +224,7 @@ a:active {color:#F7931E;}    /* selected link */
 
 
 
-/* Responzive Menu Displays In Top over 48 ems and in footer under 48 ems */
+/* Responzive Menu Displays In Top And Bottom over 39 ems and in footer under 39 ems */
 
 header nav ul { display: none; list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; background-color: #F7931E;}
 header nav ul li { display: inline-block; text-align: left; }
@@ -435,7 +435,7 @@ img {
 
 /* Media Query for Tablets ------------------------------ Landscape -wide- 1100px Tablets*/
 
-@media all and (min-width: 68.750em)  {
+@media all and (min-width: 69.5em)  {
 
 	body {
 		font-size: 1.2em;
